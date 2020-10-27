@@ -32,9 +32,9 @@ public class Uang extends Fragment {
             public void onClick(View view) {
 
                 mViewModels.uang.setDollar(Integer.parseInt(binding.txtDollar.getText().toString()));
-                mViewModels.uang.setRupiah(Integer.parseInt(binding.txtRupiah.getText().toString()));
+//                mViewModels.uang.setRupiah(Integer.parseInt(binding.txtRupiah.getText().toString()));
                 mViewModels.hitungTotal();
-                binding.texthasil.setText(Integer.toString(mViewModels.uang.getRupiah()));
+                binding.txtRupiah.setText(Integer.toString(mViewModels.uang.getRupiah()));
 
             }
         });
